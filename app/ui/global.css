@@ -2,17 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-input[type='number'] {
+/* グローバルスタイルについて。
+アプリケーションのどのコンポーネントでもglobal.cssをインポートできますが、
+通常はトップレベルのコンポーネントに追加するのがよい習慣です。
+Next.jsでは、これがルートレイアウト(appディレクトリのトップ)です
+https://nextjs.org/learn/dashboard-app/css-styling
+
+*/
+
+input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
 
-input[type='number']::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
